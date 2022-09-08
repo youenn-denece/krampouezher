@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--greengray);
+}
+
+:root {
+    --font-family: 'Antonio', sans-serif;
+    --primary:#874C62;
+    --secondary:#C98474;
+    --accent:#F2D388;
+    --greengray: #A7D2CB;
+    --lightgray:#d1ccc0;
+    --text-regular:#444;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-regular);
+}
+
+// layout
+
+.container {
+    max-width: 1200px;
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-justify-content-center {
+    justify-content: center;
+}
+
+.flex-justify-content-between {
+    justify-content: space-between;
+}
+
+.flex-align-items-center {
+    align-items: center;
+}
+
+.flex-align-items-between {
+    align-items: space-between;
+}
+
+.flex-fill {
+    flex: 1 1 auto;
+}
+
+.flex-50 {
+    flex: 11 50%;
+}
+
+// util
+
+.p-10 {
+    padding: 10px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.pr-30 {
+    padding-right: 30px;
+}
+
+.pl-30 {
+    padding-left: 30px;
+}
+
+.m-10 {
+    margin: 10px
+}
+
+.m-20 {
+    margin: 20px
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+// theme
+.list-primary {
+    li {
+        padding: 10px;
+        border: 1px solid var(--lightgray);
+        border-top: 0;
+        &:hover {
+            background-color: var(--greengray);
+            font-weight: 400;
+            cursor: pointer;
+            color: white;
+        }
+        transition: all 0.4s;
+    }
+    li:first-child {
+        border-top: 1px solid var(--lightgray);
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+    li:last-child {
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+}
+
+.btn {
+    padding: 10px 15px;
+    font-size: 10px;
+    font-weight: 600;
+    background-color: white;
+    border: 0;
+    border-radius: 3px;
+    &-primary {
+        background-color: var(--primary);
+        color: white;
+        &:hover {
+            background-color: var(--secondary);
+            cursor: pointer;
+        }
+        transition: background-color 0.4s;
+    }
+}
+
+
+// debug
+.d1 {
+    border: 1px solid red;
+}
+
+.d2 {
+    border: 1px solid green;
+}
